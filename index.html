@@ -1,38 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Big O Notation Exercise</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Big O Notation Practice</h1>
     <div>
-        <h2>Step One: Simplifying Expressions</h2>
-        <ol>
-            <li>O(n + 10): <b>O(n)</b></li>
-            <li>O(100 * n): <b>O(n)</b></li>
-            <li>O(25): <b>O(1)</b></li>
-            <li>O(n^2 + n^3): <b>O(n<sup>3</sup>)</b></li>
-            <li>O(n + n + n + n): <b>O(n)</b></li>
-            <li>O(1000 * log(n) + n): <b>O(n)</b></li>
-            <li>O(1000 * n * log(n) + n): <b>O(<i>n</i>log(n))</b></li>
-            <li>O(2^n + n^2): <b>O(2<sup><i>n</i></sup>)</b></li>
-            <li>O(5 + 3 + 1): <b>O(1)</b></li>
-            <li>O(n + n^(1/2) + n^2 + n * log(n)^10): <b>O(n<sup>2</sup>)</b></li>
-        </ol>
+      <h2>Step One: Simplifying Expressions</h2>
+      <ol>
+        <li>O(n + 10): <b>O(n)</b></li>
+        <li>O(100 * n): <b>O(n)</b></li>
+        <li>O(25): <b>O(1)</b></li>
+        <li>O(n^2 + n^3): <b>O(n<sup>3</sup>)</b></li>
+        <li>O(n + n + n + n): <b>O(n)</b></li>
+        <li>O(1000 * log(n) + n): <b>O(n)</b></li>
+        <li>O(1000 * n * log(n) + n): <b>O(<i>n</i>log(n))</b></li>
+        <li>
+          O(2^n + n^2):
+          <b
+            >O(2<sup><i>n</i></sup
+            >)</b
+          >
+        </li>
+        <li>O(5 + 3 + 1): <b>O(1)</b></li>
+        <li>O(n + n^(1/2) + n^2 + n * log(n)^10): <b>O(n<sup>2</sup>)</b></li>
+      </ol>
     </div>
     <div>
-        <h2>Step Two: Calculating Time Complexity</h2>
+      <h2>Step Two: Calculating Time Complexity</h2>
+      <ol>
+        <li><b>O(n)</b></li>
+        <li>If n > 10 <b>O(n)</b>, if n < 10 <b>O(1)</b></li>
+        <li>For n <= 10 <b>O(n)</b> For n > 10 <b>O(1)</b></li>
+        <li><b>O(n)</b></li>
+        <li><b>O(n<sup>2</sup>)</b></li>
+        <li><b>O(n)</b></li>
+      </ol>
+    </div>
+    <div>
+      <h2>Step Three: T/F & Short Answer</h2>
+      <ol>
+        <li><b>True</b></li>
+        <li><b>True</b></li>
+        <li><b>False</b></li>
+        <li>
+          <b
+            >.indexOf array method has a complexity of O(n) because it iterates
+            through an array one by one until it finds a match</b
+          >
+        </li>
+        <li>
+          <b
+            >.includes array method has a complexity of O(n) because it iterates
+            through an array one by one until it finds a match.</b
+          >
+        </li>
+        <li>
+          <b
+            >.forEach array method has a complexity of O(n) because it iterates
+            through an array and executes a provided function for each array
+            element</b
+          >
+        </li>
+        <li>
+          <b
+            >.sort array method has a complexity of O(<i>n</i>log(n)) because it
+            divides an array into smaller chunks, and inserts them using a merge
+            sort</b
+          >
+        </li>
+        <li>
+          <b
+            >.unshift array method has a complexity of O(n) because it shifts
+            all existing elements to accomodate for the new element(s) at the
+            beginning</b
+          >
+        </li>
+        <li>
+          <b
+            >.push array method has a complexity of O(1) because it simply adds
+            an element to an array and doesn't need to shift any other
+            elements</b
+          >
+        </li>
+        <li><b>.splice array method has a complexity of O(n) because it has to shift existing elements to accomodate new element(s) or remove existing elements</b></li>
+        <li><b>.pop array method has a complexity of O(1) because it involves updating an index of the last element when no argument is provided, but O(n) when an argument is given</b></li>
+        <li><b>Object.keys() has a complexity of O(n) because it returns an array containing all the enumerable keys of the given object</b></li>
+      </ol>
+    </div>
+    <div>
+        <h2>Bonus</h2>
         <ol>
-            <li><b>O(n)</b></li>
-            <li>If n > 10 <b>O(n)</b>, if n < 10 <b>O(1)</b></li>
-            <li>For n <= 10 <b>O(n)</b> For n > 10 <b>O(1)</b> </li>
-            <li><b>O(n)</b></li>
-            <li><b>O(n<sup>2</sup>)</b></li>
-            <li><b>O(n)</b></li>
+            <li><b>The space complexity of Object.keys() is O(n) the size of the array corresponds to the nubmer of keys so the space is proporitional to original number of keys</b></li>
         </ol>
     </div>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
